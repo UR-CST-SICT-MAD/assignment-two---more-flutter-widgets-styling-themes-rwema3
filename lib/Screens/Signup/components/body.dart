@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/Screens/Signup/components/background.dart';
-import 'package:flutter_auth/Screens/Signup/components/or_divider.dart';
-import 'package:flutter_auth/Screens/Signup/components/social_icon.dart';
-import 'package:flutter_auth/components/rounded_button.dart';
-import 'package:flutter_auth/components/rounded_input_field.dart';
-import 'package:flutter_auth/components/rounded_password_field.dart';
+import 'package:Starbelly_Restaurant_app/Screens/Signup/components/background.dart';
+import 'package:Starbelly_Restaurant_app/Screens/Signup/components/or_divider.dart';
+import 'package:Starbelly_Restaurant_app/Screens/Signup/components/social_icon.dart';
+import 'package:Starbelly_Restaurant_app/components/rounded_button.dart';
+import 'package:Starbelly_Restaurant_app/components/rounded_input_field.dart';
+import 'package:Starbelly_Restaurant_app/components/rounded_password_field.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../restaurant_theme.dart';

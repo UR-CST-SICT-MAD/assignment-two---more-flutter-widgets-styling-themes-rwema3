@@ -12,7 +12,8 @@ class Fastfood extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold (appBar: AppBar
         (backgroundColor:Colors.green,
-        title:const Text('Starbelly restaurant'),
+        title:const Text('Starbelly restaurant'
+        ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
@@ -60,7 +61,6 @@ class Fastfood extends StatelessWidget {
 
         ),
 
-
       ),
 
     );
@@ -86,7 +86,14 @@ List<Card> _buildGridCards(int count) {
               children: <Widget>[
                 Text('Foods'),
                 const SizedBox(height: 8.0),
-                Text('Delicious Food are available here'),
+                Text('Delicious Food are available here',
+                  style: TextStyle(
+                    fontSize:20,
+                    color: Colors.green,
+                    fontFamily: 'LibreBaskerville',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
             ),
           ),
@@ -94,6 +101,5 @@ List<Card> _buildGridCards(int count) {
       ),
     ),
   );
-
   return cards;
 }
