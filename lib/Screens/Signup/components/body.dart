@@ -40,7 +40,9 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             ElevatedButton(
-                child: Text('See Food Menu'),
+                child: Text(
+                  'See Food Menu',
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,
