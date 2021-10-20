@@ -26,6 +26,7 @@ dependencies:
   flutter_svg: ^0.19.1
 
 dev_dependencies:
+  focused_menu: ^1.0.0
   flutter_test:
     sdk: flutter
 

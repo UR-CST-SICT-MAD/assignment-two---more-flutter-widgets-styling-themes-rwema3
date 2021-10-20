@@ -40,6 +40,10 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xFF1B5E20), // background
+                onPrimary: Colors.white,
+              ),
                 child: Text(
                   'See Food Menu',
                 ),
@@ -49,6 +53,7 @@ class Body extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => Fastfood()),
                   );
             }
+
             ),
             OrDivider(),
             Row(
