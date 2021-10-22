@@ -6,6 +6,6 @@
     <!-- <item> -->
     <!--  <bitmap -->
 
-    <!--     Android:src="@drawable/pizza" /> -->
+    <!--    android:src="@drawable/pizza" /> -->
     <!--  </item> -->
 </layer-list>

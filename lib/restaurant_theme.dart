@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(Fastfood());
+
 }
 
 class Fastfood extends StatelessWidget {
 
   createAlertDialog(BuildContext context){
     return showDialog(context: context, builder:(context){
-     return AlertDialog(
-       title: Text("Price is 5000 frw"),
-       content: Text("It is Healthy 100%"),
-     );
+      return AlertDialog(
+        title: Text("Price is 5000 frw"),
+        content: Text("It is Healthy 100%"),
+      );
     });
 
   }
@@ -59,7 +60,8 @@ class Fastfood extends StatelessWidget {
       );
     });
 
-  }createAlertDialog7(BuildContext context){
+  }
+  createAlertDialog7(BuildContext context){
     return showDialog(context: context, builder:(context){
       return AlertDialog(
         title: Text("Price is 2300 frw"),
@@ -69,7 +71,6 @@ class Fastfood extends StatelessWidget {
 
   }
 
-
   const Fastfood({key}) : super(key: key);
 
   @override
@@ -77,8 +78,11 @@ class Fastfood extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
+
           backgroundColor: Color(0xFF1B5E20),
+
           title: const Text('Starbelly restaurant'),
           actions: <Widget>[
             IconButton(
@@ -93,8 +97,8 @@ class Fastfood extends StatelessWidget {
         ),
         body: GridView.count(
           crossAxisCount: 2,
-          padding: const EdgeInsets.all(16.0),
-          childAspectRatio: 8.0 / 9.0,
+          padding: const EdgeInsets.all(14.0),
+          childAspectRatio: 6.0 / 9.0,
           children: <Widget>[
 
             Card(
@@ -120,15 +124,15 @@ class Fastfood extends StatelessWidget {
                         Text('Buger is awesomely'),
                         FlatButton(
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5.0)),
-                            color: Color(0xFF1B5E20),
-                            textColor: Colors.white,
-                            onPressed: (){
+                              borderRadius: BorderRadius.circular(5.0)),
+                          color: Color(0xFF1B5E20),
+                          textColor: Colors.white,
+                          onPressed: (){
                             createAlertDialog(context);
 
-                            },
-                            child: Text('Details'
-                            ),
+                          },
+                          child: Text('Details'
+                          ),
 
                         ),
                       ],
@@ -144,7 +148,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/rice.jpg'),
+                    child: Image.asset('images/rice.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -184,7 +188,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/ptt.jpg'),
+                    child: Image.asset('images/ptt.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -224,7 +228,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/meange.jpg'),
+                    child: Image.asset('images/meange.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -264,7 +268,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/vegeterian.jpg'),
+                    child: Image.asset('images/vegeterian.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -304,7 +308,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/sch.jpg'),
+                    child: Image.asset('images/sch.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -344,7 +348,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/banana.jpg'),
+                    child: Image.asset('images/banana.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -384,7 +388,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/kaunga.jpg'),
+                    child: Image.asset('images/kaunga.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -424,7 +428,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/i.jpg'),
+                    child: Image.asset('images/ptt.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -504,7 +508,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/rice.jpg'),
+                    child: Image.asset('images/rice.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -544,7 +548,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/ptt.jpg'),
+                    child: Image.asset('images/ptt.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -584,7 +588,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/meange.jpg'),
+                    child: Image.asset('images/meange.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -624,7 +628,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/vegeterian.jpg'),
+                    child: Image.asset('images/vegeterian.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -664,7 +668,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/sch.jpg'),
+                    child: Image.asset('images/sch.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -704,7 +708,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/banana.jpg'),
+                    child: Image.asset('images/banana.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -744,7 +748,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/kaunga.jpg'),
+                    child: Image.asset('images/kaunga.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -784,14 +788,14 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/i.jpg'),
+                    child: Image.asset('images/ptt.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text('Salade',
+                        Text('Indiana',
                           style: TextStyle(
                             fontFamily: 'LibreBaskerville',
                           ),
@@ -864,7 +868,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/rice.jpg'),
+                    child: Image.asset('images/rice.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -904,7 +908,7 @@ class Fastfood extends StatelessWidget {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('images/ptt.jpg'),
+                    child: Image.asset('images/ptt.JPG'),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
