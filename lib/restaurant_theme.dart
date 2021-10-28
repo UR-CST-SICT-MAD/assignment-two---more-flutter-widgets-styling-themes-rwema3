@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'colors.dart';
+
 void main() {
   runApp(Fastfood());
 
@@ -7,69 +9,440 @@ void main() {
 
 class Fastfood extends StatelessWidget {
 
-  createAlertDialog(BuildContext context){
+
+  createAlertDialogBurger(BuildContext context){
     return showDialog(context: context, builder:(context){
       return AlertDialog(
-        title: Text("Price is 5000 frw"),
-        content: Text("It is Healthy 100%"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: Burger,
+        title: Text('Burger Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/burger.png',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price is 3000Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('You Will like this Burger For sure',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     });
 
   }
-  createAlertDialog1(BuildContext context){
+  createAlertDialogRice(BuildContext context){
     return showDialog(context: context, builder:(context){
       return AlertDialog(
-        title: Text("Price is 3000 frw"),
-        content: Text("It is Healthy 100%"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: Rice,
+        title: Text('Rice Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/rice.JPG',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price of this rice is 6000Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('Good African Rice',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     });
 
   }
-  createAlertDialog2(BuildContext context){
+  createAlertDialogPotatoes(BuildContext context){
     return showDialog(context: context, builder:(context){
       return AlertDialog(
-        title: Text("Price is 6000 frw"),
-        content: Text("It is Healthy 100%"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: Ptt,
+        title: Text('Potatoes Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/ptt.JPG',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price is 2100Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('Good African Rice',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     });
 
   }
-  createAlertDialog4(BuildContext context){
+  createAlertDialogMelanje(BuildContext context){
     return showDialog(context: context, builder:(context){
       return AlertDialog(
-        title: Text("Price is 3000 frw"),
-        content: Text("It is Healthy 100%"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: Ptt,
+        title: Text('Melanje Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/meange.JPG',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price is 2100Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('Good African Rice',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     });
 
   }
-  createAlertDialog5(BuildContext context){
+  createAlertDialogVegeterian(BuildContext context){
     return showDialog(context: context, builder:(context){
       return AlertDialog(
-        title: Text("Price is 10,000 frw"),
-        content: Text("It is Healthy 100%"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: Ptt,
+        title: Text('Vegeterian Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/vegeterian.JPG',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price is 4500Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('Good Vegetarian',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     });
 
   }
-  createAlertDialog6(BuildContext context){
+  createAlertDialogPrivate(BuildContext context){
     return showDialog(context: context, builder:(context){
       return AlertDialog(
-        title: Text("Price is 7600 frw"),
-        content: Text("It is Healthy 100%"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: Privats,
+        title: Text('Private Skl Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/sch.JPG',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price is 6700Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('Good private school',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     });
 
   }
-  createAlertDialog7(BuildContext context){
+  createAlertDialogBanana(BuildContext context){
     return showDialog(context: context, builder:(context){
       return AlertDialog(
-        title: Text("Price is 2300 frw"),
-        content: Text("It is Healthy 100%"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: Ptt,
+        title: Text('Banana Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/banana.JPG',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price is 6700Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('Banana is Cool',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     });
 
   }
+  createAlertDialogKaunga(BuildContext context){
+    return showDialog(context: context, builder:(context){
+      return AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: kaunga,
+        title: Text('Kaunga Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/kaunga.JPG',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price is 3490Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('Banana is Cool',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    });
+
+  }
+  createAlertDialogPizza(BuildContext context){
+    return showDialog(context: context, builder:(context){
+      return AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        backgroundColor: pizza,
+        title: Text('Pizza Details',
+          style: TextStyle(
+            fontFamily: 'LibreBaskerville',
+            color: Colors.white,
+          ),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: <Widget>[
+              Container(
+                width: 90,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset('images/pizza.png',
+                    height: 30,
+                    cacheWidth: 30,
+                  ),
+                ),
+              ),
+
+              Text('The Price is 2200Frw',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+              Text('Awesome Pizza',
+                style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    });
+
+  }
+
 
   const Fastfood({key}) : super(key: key);
 
@@ -128,7 +501,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog(context);
+                            createAlertDialogBurger(context);
 
                           },
                           child: Text('Details'
@@ -168,7 +541,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog1(context);
+                            createAlertDialogRice(context);
 
                           },
                           child: Text('Details'
@@ -201,14 +574,14 @@ class Fastfood extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Text('For Vegan'),
+                        Text('Potatoes For Vegan'),
                         FlatButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog2(context);
+                            createAlertDialogPotatoes(context);
 
                           },
                           child: Text('Details'
@@ -248,7 +621,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog4(context);
+                            createAlertDialogMelanje(context);
 
                           },
                           child: Text('Details'
@@ -288,7 +661,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog5(context);
+                            createAlertDialogVegeterian(context);
 
                           },
                           child: Text('Details'
@@ -321,14 +694,14 @@ class Fastfood extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Text('Nice 4r vegetarians '),
+                        Text('Good Food '),
                         FlatButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog6(context);
+                            createAlertDialogPrivate(context);
 
                           },
                           child: Text('Details'
@@ -368,7 +741,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog2(context);
+                            createAlertDialogBanana(context);
 
                           },
                           child: Text('Details'
@@ -408,7 +781,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog2(context);
+                            createAlertDialogKaunga(context);
 
                           },
                           child: Text('Details'
@@ -448,7 +821,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog1(context);
+                            createAlertDialogPrivate(context);
 
                           },
                           child: Text('Details'
@@ -481,14 +854,14 @@ class Fastfood extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Text('Pizza nziza'),
+                        Text('Pizza nzizaaa'),
                         FlatButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog1(context);
+                            createAlertDialogPizza(context);
 
                           },
                           child: Text('Details'
@@ -528,7 +901,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog1(context);
+                            createAlertDialogRice(context);
 
                           },
                           child: Text('Details'
@@ -568,7 +941,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog2(context);
+                            createAlertDialogPotatoes(context);
 
                           },
                           child: Text('Details'
@@ -601,14 +974,14 @@ class Fastfood extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Text('Nice Indian Melange'),
+                        Text('Rwandan Meranje'),
                         FlatButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog4(context);
+                            createAlertDialogMelanje(context);
 
                           },
                           child: Text('Details'
@@ -635,7 +1008,7 @@ class Fastfood extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text('Vegetarian Diet',
+                        Text('Vegetarian Nzimaa',
                           style: TextStyle(
                             fontFamily: 'LibreBaskerville',
                           ),
@@ -648,7 +1021,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog5(context);
+                            createAlertDialogVegeterian(context);
 
                           },
                           child: Text('Details'
@@ -681,14 +1054,14 @@ class Fastfood extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Text('Nice 4r vegetarians '),
+                        Text('Privates Diet '),
                         FlatButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog6(context);
+                            createAlertDialogPrivate(context);
 
                           },
                           child: Text('Details'
@@ -715,7 +1088,7 @@ class Fastfood extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text('Banana Fruits',
+                        Text('Banana 4 U',
                           style: TextStyle(
                             fontFamily: 'LibreBaskerville',
                           ),
@@ -728,7 +1101,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog2(context);
+                            createAlertDialogBanana(context);
 
                           },
                           child: Text('Details'
@@ -761,14 +1134,14 @@ class Fastfood extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Text('Beauty Kaunga'),
+                        Text('Beauty Kaunga Rwanda'),
                         FlatButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog2(context);
+                            createAlertDialogKaunga(context);
 
                           },
                           child: Text('Details'
@@ -795,7 +1168,7 @@ class Fastfood extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text('Indiana',
+                        Text('Rwandan',
                           style: TextStyle(
                             fontFamily: 'LibreBaskerville',
                           ),
@@ -808,7 +1181,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog1(context);
+                            createAlertDialogPotatoes(context);
 
                           },
                           child: Text('Details'
@@ -848,7 +1221,7 @@ class Fastfood extends StatelessWidget {
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog1(context);
+                            createAlertDialogPizza(context);
 
                           },
                           child: Text('Details'
@@ -881,14 +1254,14 @@ class Fastfood extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Text('African Rice'),
+                        Text('EURO Rice'),
                         FlatButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog1(context);
+                            createAlertDialogRice(context);
 
                           },
                           child: Text('Details'
@@ -921,14 +1294,14 @@ class Fastfood extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Text('For Vegan'),
+                        Text('Ibijumba rwanda'),
                         FlatButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
                           color: Color(0xFF1B5E20),
                           textColor: Colors.white,
                           onPressed: (){
-                            createAlertDialog2(context);
+                            createAlertDialogPotatoes(context);
 
                           },
                           child: Text('Details'
